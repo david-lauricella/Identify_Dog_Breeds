@@ -37,9 +37,6 @@ def adjust_results4_isadog(results_dic, dogfile):
             # Reads in next line in file to be processed with while loop
             line = infile.readline()
 
-    # --- DEBUG PRINT: This will confirm the fix works ---
-    print("DEBUG: Loaded", len(dognames_dic), "dog names from file.")
-
     # Iterates through the results dictionary to adjust tags
     for key in results_dic:
         
