@@ -70,7 +70,7 @@ def classify_images(images_dir, results_dic, model):
         pet_label = results_dic[filename][0]
         
         # Create the full path to the image file
-        image_path = images_dir + filename
+        image_path = join(images_dir, filename)
         
         # Get the classifier label using the classifier function
         classifier_label = classifier(image_path, model)
@@ -86,4 +86,3 @@ def classify_images(images_dir, results_dic, model):
         
         # Extend the results dictionary with the classifier label and match result
         results_dic[filename].extend([classifier_label, match])
-    None 

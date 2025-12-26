@@ -2,19 +2,19 @@ Questions regarding Uploaded Image Classification:
 
 1. Did the three model architectures classify the breed of dog in Dog_01.jpg to be the same breed? If not, report the differences in the classifications.
 
-Answer: 
+Answer: Yes. All three model architectures (AlexNet, ResNet, and VGG) classified Golden_retriever_01.jpg as a golden retriever.
 
 
 2. Did each of the three model architectures classify the breed of dog in Dog_01.jpg to be the same breed of dog as that model architecture classified Dog_02.jpg? If not, report the differences in the classifications.
 
-Answer: 
+Answer: No. All three model architectures classified Golden_retriever_01.jpg as a golden retriever, but classified Golden_retriever_02.jpg as an Irish terrier. This indicates that none of the models were consistent when the image was flipped/altered.
 
 
 3. Did the three model architectures correctly classify Animal_Name_01.jpg and Object_Name_01.jpg to not be dogs? If not, report the misclassifications.
 
-Answer: 
+Answer: Yes. All three model architectures correctly classified the animal images (such as horse, cat, and black bear) and the object images (such as chair, coffee mug, and car) as not dogs. None of the models incorrectly identified a non-dog image as a dog.
 
 
 4. Based upon your answers for questions 1. - 3. above, select the model architecture that you feel did the best at classifying the four uploaded images. Describe why you selected that model architecture as the best on uploaded image classification.
 
-Answer:
+Answer: All three model architectures performed equally well on the uploaded images. Each model correctly identified dog versus not-dog images with 100% accuracy and classified Dog_01.jpg correctly. However, all three models failed to correctly classify the breed of the altered dog image (Dog_02.jpg). Since their performance was identical across dog detection, non-dog detection, and breed accuracy, no single architecture clearly outperformed the others on this set of uploaded images.
